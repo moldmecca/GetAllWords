@@ -6,7 +6,7 @@ info:
     금형 표준어 유사어 조회
     - 금형 용어의 표준어 및 유사어 데이터를 조회하는 기능입니다.
   x-logo: 
-    url: 'https://myeonggwon.github.io/API_3/MoldON_logo.png'
+    url: 'https://myeonggwon.github.io/GetAllWords/MoldON_logo.png'
     altText: A Logo image of MoldON
 paths:
   /GetAllWords:
