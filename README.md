@@ -1,1 +1,2 @@
-# API_3
+# GetAllWords
+## API Repository for search standard words and similar words of mold information.
