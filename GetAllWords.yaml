@@ -5369,7 +5369,7 @@ components:
 
   schemas:
     Response_GetAllWords:
-      description: Respresentation of all words response.
+      description: Respresentation of all words responses.
       type: object
       properties:
         result:
