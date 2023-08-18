@@ -6,7 +6,7 @@ info:
     금형 표준어 유사어 조회
     - 금형 용어의 표준어 및 유사어 데이터를 조회하는 기능입니다.
   x-logo: 
-    url: 'https://myeonggwon.github.io/GetAllWords/MoldON_logo.png'
+    url: 'https://moldmecca.github.io/GetAllWords/MoldON_logo.png'
     altText: A Logo image of MoldON
 paths:
   /GetAllWords:
@@ -5338,13 +5338,18 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Response_GetAllWords'
-        '401':
-          description: unauthorized
+        '403':
+          description: API KEY 오류
           content:
             application/json:
               example:
-                error: unauthorized
-                status: 401
+                detail: "The API-key is invalid."      
+        '501':
+          description: 결과값 추출 오류
+          content:
+            application/json:
+              example:
+                detail: " Error : [get_nlp_info] error message"      
       requestBody:
         content:
           application/json:
